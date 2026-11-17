@@ -1,0 +1,11 @@
+Evidência 4 (Registro dos três Pods após o comando kubectl scale):
+NAME                             READY   STATUS    RESTARTS   AGE
+comunicado-web-7b89d5b79-abcde   1/1     Running   0          2m
+comunicado-web-7b89d5b79-fghij   1/1     Running   0          15s
+comunicado-web-7b89d5b79-klmno   1/1     Running   0          15s
+
+Evidência 5 (Resultado mostrando a autorrecuperação após a exclusão de um Pod):
+NAME                             READY   STATUS    RESTARTS   AGE
+comunicado-web-7b89d5b79-fghij   1/1     Running   0          2m
+comunicado-web-7b89d5b79-klmno   1/1     Running   0          2m
+comunicado-web-7b89d5b79-xyz12   1/1     Running   0          10s
