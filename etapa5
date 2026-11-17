@@ -1,0 +1,9 @@
+Evidência 6 (Resultado do teste de acesso HTTP via Service):
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+...
+<h1>Welcome to nginx!</h1>
+...
+</html>
