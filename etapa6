@@ -1,0 +1,11 @@
+Questão 1. Qual é a diferença entre uma imagem Docker e um contêiner em execução?
+Uma imagem Docker é um pacote estático, somente leitura, que contém o código da aplicação, bibliotecas, dependências e arquivos de configuração necessários para rodar o software. Já o contêiner é a instância em execução dessa imagem; ou seja, é o ambiente dinâmico e isolado onde a aplicação de fato ganha vida e consome recursos de processamento e memória.
+
+Questão 2. Qual é a função de um Deployment no Kubernetes?
+O Deployment gerencia o ciclo de vida dos Pods, garantindo que a quantidade correta de instâncias da aplicação esteja em execução, além de permitir atualizações controladas (rollouts/rollbacks) sem deixar o serviço indisponível.
+
+Questão 3. O que aconteceu quando você excluiu um Pod? Por que isso aconteceu?
+Quando o Pod foi excluído, o Kubernetes automaticamente criou um novo substituto. Isso ocorreu porque o Deployment monitora o estado desejado (desired state) da aplicação — como configuramos para manter o serviço ativo (e posteriormente com réplicas), o orquestrador detecta a discrepância e age de forma autônoma para recuperar o estado esperado.
+
+Questão 4. Qual é a finalidade de um Service no Kubernetes?
+Como os Pods são dinâmicos e mudam de IP constantemente quando são recriados, o Service atua como uma abstração de rede de IP estável e um balanceador de carga, fornecendo um ponto de acesso confiável para que outras aplicações ou usuários possam se comunicar com os Pods da aplicação.
